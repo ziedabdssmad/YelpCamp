@@ -1,0 +1,23 @@
+{
+  "name": "yelpcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziedabdssmad/YelpCamp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ziedabdssmad/YelpCamp/issues"
+  },
+  "homepage": "https://github.com/ziedabdssmad/YelpCamp#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
