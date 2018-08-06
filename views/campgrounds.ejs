@@ -1,0 +1,28 @@
+<% include partials/header%>
+    <header class="jumbotron m-2 py-3">
+        <h1>This is The campground page</h1>
+        <p>View our hand-picked campgrounds from all over the world</p>
+        <p>
+            <a class="btn btn-primary" href="/campgrounds/new">Add new campground</a>
+        </p>
+    </header>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Our Most Popular Camps</h3>
+        </div>
+    </div>
+
+    <div class="row text-center mt-2" style="display:flex ; flex-wrap: wrap;">
+
+        <% campgrounds.forEach(function(campground){ %>
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card-title">
+                        <h4><%= campground.name %></h4>
+                    </div>
+                    <img src="<%=campground.image %>" alt="">
+                </div>
+            </div>
+    <% }) %>
+    </div>
