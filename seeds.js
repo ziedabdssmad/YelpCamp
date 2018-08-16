@@ -4,18 +4,19 @@ var Comment =require("./models/comment");
 var data =[
     {
         name:"cloud's Rest",
-        image:"https://pixabay.com/get/e834b70c2cf5083ed1584d05fb1d4e97e07ee3d21cac104496f3c77cafefb6b0_340.jpg",
-        description:"spring campground"
+        image:"https://pixabay.com/get/e03db50f2af41c22d2524518b7444795ea76e5d004b0144296f7c478a0efb0_340.jpg",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magnam, doloribus pariatur tempore veniam illo commodi tempora delectus sit numquam necessitatibus cupiditate culpa laboriosam optio ipsa sunt quas alias minus"
+    
     },
     {
         name:"nighty",
-        image:"https://pixabay.com/get/e83db80d2cfd053ed1584d05fb1d4e97e07ee3d21cac104496f3c77cafefb6b0_340.jpg",
-        description:"this is a nighty camp"
+        image:"https://pixabay.com/get/ef3cb00b2af01c22d2524518b7444795ea76e5d004b0144296f7c478a0efb0_340.jpg",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magnam, doloribus pariatur tempore veniam illo commodi tempora delectus sit numquam necessitatibus cupiditate culpa laboriosam optio ipsa sunt quas alias minus?"
     },
     {
         name:"mountain",
-        image:"https://pixabay.com/get/e036b80a20fc1c22d2524518b7444795ea76e5d004b0144296f6c471a5eebd_340.jpg",
-        description:"this is a mountain camp"
+        image:"https://pixabay.com/get/e83db50a2ff5083ed1584d05fb1d4e97e07ee3d21cac104496f3c67ca6eab7bd_340.jpg",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magnam, doloribus pariatur tempore veniam illo commodi tempora delectus sit numquam necessitatibus cupiditate culpa laboriosam optio ipsa sunt quas alias minus?"
     }
 ]
 function seedDB() {

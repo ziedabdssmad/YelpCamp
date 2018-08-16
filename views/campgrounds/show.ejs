@@ -1,10 +1,63 @@
 <% include ../partials/header %>
+    <div class="container">
+        <div class="row mx-1">
+            <div class="col-md-3">
+                <p class="lead">Yelp Camp</p>
+                <ul class="list-group">
+                    <li class="list-group-item active">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="card mb-2">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h2>
+                                <%=campground.name%>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-image">
+                            <img class="img-responsive" src="<%=campground.image%>" alt="">
+                        </div>
+                        <div class="caption-full">
+                            <h4 class="pull-right">$9.00/night</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                <%=campground.description%>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-light">
 
-<h1><%=campground.name%></h1>
+                    <div class="card-body">
 
-<img src="<%=campground.image%>" alt="">
-<p><%=campground.description%></p>
-<% campground.comments.forEach(function(comment){ %>
-    <p><strong><%=comment.author%></strong>: <%=comment.text%><p>
-<% })%>
+                        <p class="text-right">
+                            <a href="/campgrounds/<%=campground._id%>/comments/new" class="btn btn-primary m-2">Add New Comment</a>
+                        </p>
+                        <% campground.comments.forEach(function(comment){ %>
 
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <strong>
+                                        <%=comment.author%>:
+                                    </strong>
+                                    <span class="float-right">10 days ago</span>
+                                    <p>
+
+                                        <%=comment.text%>
+                                            <p>
+                                </div>
+                            </div>
+                            <% })%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
